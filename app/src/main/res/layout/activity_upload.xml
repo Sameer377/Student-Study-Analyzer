@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:weightSum="2"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="60dp"
+        android:layout_height="300dp"
+        android:layout_weight="0.5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_teacher_upload_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/custom_back_btn"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:text="Button" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Java"
+                        android:textColor="#000"
+                        android:textSize="35sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/comfortaa_light"
+                        android:text="Third Year "
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView2"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/comfortaa_light"
+                        android:text="Computer Engineering"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/comfortaa_light"
+                        android:text="Select the Uploading file "
+                        android:textColor="#000"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/background1"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Select Folder :"
+            android:textColor="#FFFF"
+            android:textSize="25dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_card"
+            android:textAlignment="center" />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/spinner1"
+    android:id="@+id/frameLayout1"
+    android:background="@drawable/border_card">
+
+</FrameLayout>
+<!--        <Button-->
+<!--            android:id="@+id/btn_teacher_upload_upload"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@id/teacher_spinner"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:background="@drawable/custom_button"-->
+<!--            android:text="Upload"-->
+<!--            android:textColor="@color/whiteTextColor"-->
+<!--            android:textSize="20dp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_teacher_upload_browse"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@+id/btn_teacher_upload_upload"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/custom_button"-->
+<!--            android:text="Browse"-->
+<!--            android:textColor="@color/whiteTextColor"-->
+<!--            android:textSize="20dp" />-->
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv_filename"
+            android:textColor="#000000"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:textSize="16sp"
+            android:layout_below="@+id/btn_teacher_upload_browse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

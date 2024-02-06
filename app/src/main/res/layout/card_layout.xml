@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="11dp"
+    >
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@drawable/card_border_fees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ERP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ERP"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/NameFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ERP"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NameFee"
+            android:layout_marginTop="10dp"
+            android:text="Amount"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/PAYIDtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Amount"
+            android:layout_marginTop="10dp"
+            android:text="Pay ID :"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/PAYID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Amount"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/PAYIDtv"
+            android:text="ID"
+            android:autoLink="web"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PAYIDtv"
+            android:layout_marginTop="10dp"
+            android:text="Date"
+            />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:text="Time" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:text="1."
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

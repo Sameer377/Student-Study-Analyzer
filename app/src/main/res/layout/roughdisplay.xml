@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayFiles.DisplayVideos"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/FilesDataAna_Lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="#1C3D4E">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_weight="0.1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/SubjectName_Teacher_asses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_light"
+                    android:text="Subject Name"
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/SubjectName_Teacher_asses"
+                    android:fontFamily="@font/comfortaa_light"
+                    android:text="Assignment :"
+                    android:id="@+id/Assignment_teacher_assesme_videos"
+                    android:textColor="#FFF"
+                    android:textSize="24sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:id="@+id/view_eye_rel"
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/boarder_card_black"
+                    >
+
+                    <ImageView
+                        android:id="@+id/eye_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:src="@drawable/ic_remove_red_eye_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/eye_btn"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Views"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/view_eye_rel1"
+                    android:layout_width="60dp"
+                    android:visibility="gone"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/boarder_card_black"
+                    >
+
+                    <ImageView
+                        android:id="@+id/eye_btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:src="@drawable/ic_insert_drive_file_black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/eye_btn1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Files"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/AssignmentFilestv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="Video :"
+                android:textColor="#FFF"
+                android:textSize="15dp"
+
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recview9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/AssignmentFilestv"
+                android:layout_marginTop="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/border_card_white"/>
+
+            <ListView
+                android:visibility="gone"
+                android:id="@+id/recview23"
+                android:divider="#FFF"
+                android:textAlignment="center"
+                android:padding="20dp"
+                android:dividerHeight="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/AssignmentFilestv"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/border_card_white" />
+
+            <TextView
+                android:id="@+id/countanalysis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/AssignmentFilestv"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/AssignmentFilestv"
+                android:fontFamily="@font/comfortaa_light"
+                android:text="0"
+                android:textColor="#FFF"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ListView
+        android:padding="40dp"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent"
+        android:id="@+id/ListViewVideosTeacher"/>
+</LinearLayout>
+

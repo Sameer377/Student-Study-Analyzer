@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="150dp">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_weight="1"
+        android:id="@+id/FeesIL"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:textColorHint="#1C3D4E"
+
+        app:boxStrokeColor="#1C3D4E"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/FeesET"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberSigned"
+            android:maxLength="9"
+            android:text="1000"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/SetFees"
+            android:layout_marginStart="10dp"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+           android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/checkmark_btn"
+            android:src="@drawable/ic_check_black_24dp" />
+    </LinearLayout>
+<FrameLayout
+    android:layout_marginTop="30dp"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:visibility="invisible"
+        android:id="@+id/listFees"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#1C3D4E" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVCourse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>
+
+</LinearLayout>
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FloatingDownloadbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#1C3D4E"
+        android:foregroundGravity="bottom"
+        android:src="@drawable/ic_file_download_black_24dp"
+        />
+</RelativeLayout>

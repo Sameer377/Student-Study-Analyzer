@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/border_card"
+    android:layout_height="match_parent">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:id="@+id/custom_spinner_layout"
+     android:layout_toLeftOf="@+id/ic_dropdown"
+     tools:ignore="UnknownId"
+     android:background="@drawable/border_card">
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:src="@drawable/ic_folder"
+         />
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Select"
+         android:textSize="20dp"
+         android:padding="10dp"
+         android:textColor="#000"/>
+
+ </LinearLayout>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_down1"
+    android:background="@drawable/border_card"
+    android:id="@+id/ic_dropdown"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:padding="20dp"/>
+</RelativeLayout>

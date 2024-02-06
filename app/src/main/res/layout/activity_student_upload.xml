@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:weightSum="2"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="30dp"
+        android:layout_height="300dp"
+        android:layout_weight="0.5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_teacher_upload_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/custom_back_btn"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                     />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+                <RelativeLayout
+                    android:id="@+id/subdet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/stud_up_sub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="Assignment"
+                        android:textColor="#000"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/student_up_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/stud_up_sub"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/comfortaa_light"
+                        android:text="Year "
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView3ass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/student_up_year"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/comfortaa_light"
+                        android:text="Computer Engineering"
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+
+                </RelativeLayout>
+</ScrollView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/comfortaa_light"
+                        android:text="Select the Uploading file "
+                        android:textColor="#000"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1.5"
+        android:background="@drawable/background1"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp">
+<LinearLayout
+    android:layout_marginTop="32dp"
+    android:id="@+id/Spineerss"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/student_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:spinnerMode="dialog"
+        android:text="Select Subject"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/textView5"
+        android:background="@drawable/border_card"
+        android:textAlignment="center" />
+    <ImageButton
+        android:layout_weight="1"
+        android:id="@+id/AssignmentList"
+        android:layout_width="100dp"
+        android:tooltipText="Select here"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_card"
+        android:src="@drawable/ic_folder" />
+
+</LinearLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Spineerss"
+            android:id="@+id/frameLayout12"
+            android:background="@drawable/border_card">
+            <!--            For assignment,Notes,Videos-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attached Files :"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:id="@+id/tv_1"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_filename1"
+                android:textColor="#000"
+                android:scrollbars="vertical"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:textSize="16sp"
+                android:layout_below="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+            <ImageButton
+                android:id="@+id/clear"
+                android:layout_width="43dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_back_btn"
+                android:src="@drawable/ic_baseline_clear_24"/>
+            <!--          For Link -->
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_teacher_upload_upload"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_teacher_upload_browse"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/custom_button"
+            android:text="Upload"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_teacher_upload_browse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/frameLayout12"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:text="Browse"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="20dp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

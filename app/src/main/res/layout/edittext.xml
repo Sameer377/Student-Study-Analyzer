@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    >
+  <RelativeLayout
+      android:id="@+id/rel1"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:background="@drawable/card_border_fees"
+      >
+  </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="161dp"
+        android:layout_height="146dp"
+        android:layout_below="@+id/rel1"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/card_border_fees"/>
+
+    <RelativeLayout
+        android:id="@+id/rel3"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_below="@+id/rel1"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/rel2"
+        android:background="@drawable/card_border_fees"/>
+    <RelativeLayout
+        android:id="@+id/rel4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/card_border_fees"
+        android:foregroundGravity="bottom"
+        android:gravity="bottom">
+    </RelativeLayout>
+</RelativeLayout>

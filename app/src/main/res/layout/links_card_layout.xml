@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="true"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/card_border_fees"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:id="@+id/UrlName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="URlName :"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/icc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UrlName"
+        android:layout_alignStart="@+id/UrlName"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/ic_language_black_24dp" />
+
+    <TextView
+        android:id="@+id/URL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UrlName"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/icc"
+        android:text="URL"
+        android:autoLink="web"
+        android:textColorLink="#264FDB"
+        android:textColor="#264FDB" />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

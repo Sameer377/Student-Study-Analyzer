@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:weightSum="2"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:layout_height="300dp"
+        android:layout_weight="0.5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_teacher_upload_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/custom_back_btn"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:text="Button" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_subjectName_teacher_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:scrollbars="horizontal"
+                        android:text="Java"
+                        android:textColor="#000"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_year_teacher_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_subjectName_teacher_upload"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/comfortaa_light"
+                        android:text="Third Year "
+                        android:textColor="#000"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_year_teacher_upload"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/comfortaa_light"
+                        android:text="Computer Engineering"
+                        android:textColor="#000"
+                        android:textSize="15dp" />
+
+
+                </RelativeLayout>
+</ScrollView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/comfortaa_light"
+                        android:text="Select the Uploading file "
+                        android:textColor="#000"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/background1"
+        android:paddingLeft="40dp"
+        android:paddingTop="20dp"
+        android:paddingRight="40dp">
+
+<LinearLayout
+    android:id="@+id/spinerssss"
+    android:weightSum="1"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <Spinner
+        android:layout_weight="1"
+        android:id="@+id/student_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView5"
+        android:background="@drawable/border_card"
+        android:textAlignment="center" />
+    <ImageButton
+        android:layout_weight="1"
+        android:id="@+id/existingF"
+        android:layout_width="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/boarder_card_black"
+        android:src="@drawable/ic_folder"
+        />
+
+</LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@id/spinerssss"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_card">
+            <!--            For assignment,Notes,Videos-->
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attached Files :"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_filename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_1"
+                android:layout_marginTop="20dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbars="vertical"
+                android:textColor="#000"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/tv_filename1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_1"
+                android:layout_marginTop="20dp"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbars="vertical"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/clear"
+                android:layout_width="43dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_back_btn"
+                android:src="@drawable/ic_baseline_clear_24" />
+            <!--          For Link -->
+            <ScrollView
+                android:id="@+id/scLinks"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/layURlname"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:hint="URL Name"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tf_URLNAME"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_label"
+                            android:drawablePadding="10dp"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+<!--                    <com.google.android.material.textfield.TextInputLayout-->
+<!--                        android:id="@+id/layURl"-->
+<!--                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:layout_below="@id/layURlname"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:hint="URL"-->
+<!--                        android:visibility="gone">-->
+
+<!--                        <com.google.android.material.textfield.TextInputEditText-->
+<!--                            android:id="@+id/tf_URL_MAIN"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:drawableStart="@drawable/ic_insert_link"-->
+<!--                            android:drawablePadding="10dp"-->
+<!--                            android:inputType="text" />-->
+<!--                    </com.google.android.material.textfield.TextInputLayout>-->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/layURlname"
+                        android:weightSum="2">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/layURl"
+                            android:layout_weight="1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+
+                            android:hint="URL"
+                            android:visibility="visible">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/tf_URL_MAIN"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_insert_link"
+                                android:drawablePadding="10dp"
+                                android:inputType="text" />
+
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <ImageView
+                            android:id="@+id/pasteLink"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_content_paste_black_24dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_teacher_upload_browse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/frameLayout1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:text="Browse"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_teacher_upload_upload"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_teacher_upload_browse"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button"
+            android:text="Upload"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</LinearLayout>

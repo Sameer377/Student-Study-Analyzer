@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsappbg"
+    tools:context=".teacher.FacultyUpdates">
+
+    <ListView
+        android:id="@+id/lvConversation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/form"
+        android:divider="@null"
+        android:dividerHeight="1dp"
+        android:foregroundGravity="top"
+        android:paddingBottom="10dp"
+        android:text=""
+        tools:ignore="MissingConstraints"
+        />
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        tools:ignore="MissingConstraints">
+
+
+        <EditText
+            android:id="@+id/edittMessage"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/button1"
+            android:layout_toLeftOf="@+id/sendMessageButton"
+            android:layout_weight="0.72"
+            android:ems="10"
+            android:tooltipText="Message"
+            android:maxHeight="80dp"
+            android:background="@drawable/border_card"/>
+
+        <Button
+            android:id="@+id/buttonSendMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Send"
+            android:layout_gravity="bottom"
+            android:background="@drawable/custom_button"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

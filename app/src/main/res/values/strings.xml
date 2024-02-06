@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">page_1</string>
+    <string name="title_activity_navigation_ex">navigationEx</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!--to toggle the open close button
+        of the navigation drawer-->
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="title_activity_tab_example">TabExample</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_help">HELP</string>
+
+    <string name="UserHELp">
+      \n
+Opening the application you will get to select the login type you have to select the login time if for example admin login teacher login and student login after selecting the login type you have to enter your credit shares for example username and password.
+
+\n\n•Admin login console.\n\n
+After login in as a admin you will get four option faculty details, student details ,database, and about.
+      \n\n•Faculty details option:\n\n
+In faculty details you can add the teachers  data for database.
+      \n\n•Student Details option:\n\n
+Student details you can add the students data for database.
+
+     \n\n •database:\n\n
+Database option you can manage the accounts of faculties and students.
+
+\n\n•Teachers login console:\n\n
+ \nlogin console:\n\n
+After login as a teacher you will get 4 options profile ,send update, e-learning, upload.
+   \n\n•profile:\n\n
+Profile option you will get the full details of the faculty.
+   \n\n•send updates:\n\n
+In send update option the faculty can chat with each others and discuss about the updates.
+
+ \n\n•e-learning:\n\n
+In e-learning option you will get the e-learnings documents which the faculty have been given.
+ \n\n•upload:\n\n
+In upload option the faculty can upload the any files which he want to distribute among the students.
+
+\n\n•student login console:\n\n
+  \n login console:\n\n
+After login as a student you will get 4 options profile ,send update, e-learning, upload.
+
+ \n \n •profile:\n\n
+Profile option you will get the full details of the faculty.
+  \n \n•send updates:\n\n
+In send update option the faculty can chat with each others and discuss about the updates.
+
+ \n\n•e-learning:\n\n
+In e-learning option you will get the e-learnings documents which the faculty have been given.
+\n \n •upload:\n\n
+In upload option the faculty can upload the any files which he want to distribute among the students.
+    </string>
+</resources>
