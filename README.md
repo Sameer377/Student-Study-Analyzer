@@ -63,62 +63,43 @@ app/
 
 ## App Workflow Screenshots
 
+## App Workflow Screenshots
+
 <table>
   <tr>
-    <td align="center">
-      <img src="page-screenshots/login.png" width="200"/><br/>
-      Login Screen
-    </td>
-    <td align="center">
-      <img src="page-screenshots/admin_dashboard.png" width="200"/><br/>
-      Admin Dashboard
-    </td>
-    <td align="center">
-      <img src="page-screenshots/teacher_dashboard.png" width="200"/><br/>
-      Teacher Dashboard
-    </td>
+    <td align="center"><img src="page-screenshots/accdetails.png" width="200"/><br/>accdetails.png</td>
+    <td align="center"><img src="page-screenshots/home.png" width="200"/><br/>home.png</td>
+    <td align="center"><img src="page-screenshots/acc.png" width="200"/><br/>acc.png</td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="page-screenshots/student_dashboard.png" width="200"/><br/>
-      Student Dashboard
-    </td>
-    <td align="center">
-      <img src="page-screenshots/assignment_upload.png" width="200"/><br/>
-      Assignment Upload
-    </td>
-    <td align="center">
-      <img src="page-screenshots/assignment_list.png" width="200"/><br/>
-      Assignment List
-    </td>
+    <td align="center"><img src="page-screenshots/razorpay.png" width="200"/><br/>razorpay.png</td>
+    <td align="center"><img src="page-screenshots/addteather.png" width="200"/><br/>addteather.png</td>
+    <td align="center"><img src="page-screenshots/studenthome.png" width="200"/><br/>studenthome.png</td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="page-screenshots/notes_upload.png" width="200"/><br/>
-      Notes Upload
-    </td>
-    <td align="center">
-      <img src="page-screenshots/notes_list.png" width="200"/><br/>
-      Notes List
-    </td>
-    <td align="center">
-      <img src="page-screenshots/video_upload.png" width="200"/><br/>
-      Video Upload
-    </td>
+    <td align="center"><img src="page-screenshots/adminhome.png" width="200"/><br/>adminhome.png</td>
+    <td align="center"><img src="page-screenshots/studentlogin.png" width="200"/><br/>studentlogin.png</td>
+    <td align="center"><img src="page-screenshots/adminlogin.png" width="200"/><br/>adminlogin.png</td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="page-screenshots/video_list.png" width="200"/><br/>
-      Video List
-    </td>
-    <td align="center">
-      <img src="page-screenshots/fee_payment.png" width="200"/><br/>
-      Fee Payment
-    </td>
-    <td align="center">
-      <img src="page-screenshots/report_download.png" width="200"/><br/>
-      Report Download
-    </td>
+    <td align="center"><img src="page-screenshots/studentresponse.png" width="200"/><br/>studentresponse.png</td>
+    <td align="center"><img src="page-screenshots/adstudent.png" width="200"/><br/>adstudent.png</td>
+    <td align="center"><img src="page-screenshots/teacheranalysis.png" width="200"/><br/>teacheranalysis.png</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="page-screenshots/teacherhome.png" width="200"/><br/>teacherhome.png</td>
+    <td align="center"><img src="page-screenshots/teacherlogin.png" width="200"/><br/>teacherlogin.png</td>
+    <td align="center"><img src="page-screenshots/teacherupload.png" width="200"/><br/>teacherupload.png</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="page-screenshots/dialog.png" width="200"/><br/>dialog.png</td>
+    <td align="center"><img src="page-screenshots/feesadmin.png" width="200"/><br/>feesadmin.png</td>
+    <td align="center"><img src="page-screenshots/feeshome.png" width="200"/><br/>feeshome.png</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="page-screenshots/forgotdetails.png" width="200"/><br/>forgotdetails.png</td>
+    <td align="center"><img src="page-screenshots/viewdocs.png" width="200"/><br/>viewdocs.png</td>
+    <td align="center"></td>
   </tr>
 </table>
 
