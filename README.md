@@ -63,7 +63,6 @@ app/
 
 ## App Workflow Screenshots
 
-## App Workflow Screenshots
 
 <table>
   <tr>
